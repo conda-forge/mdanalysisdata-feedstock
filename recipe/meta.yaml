@@ -22,6 +22,7 @@ requirements:
     - python
     - six
     - setuptools
+    - tqdm
 
 test:
   imports:
