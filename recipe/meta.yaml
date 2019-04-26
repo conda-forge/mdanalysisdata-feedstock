@@ -1,5 +1,5 @@
 {% set name = "MDAnalysisData" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0cbec31c79075148f007e6e6914eec7ef4a9307283a6d81e2896240d92f97d8
+  sha256: a706be25f923d129c4221f1de35d36aa54c94abaf0602b5f7e58337bba2a6991
 
 build:
   noarch: python
