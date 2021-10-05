@@ -1,5 +1,5 @@
 {% set name = "MDAnalysisData" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b906372e7e9426c11f47c692bfa396617d0d917bd2e04584080f8a9bc352e97f
+  sha256: 068dcc6d691b7be87b2afe8d0c1c37ba6c8c2940488ee06723954fc4547d6a58
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Example MD Simulation Data'
+  summary: Example MD Simulation Data
   description: |
     The MDAnalysisData package unifies access to test and example
     trajectories that can be used for workshops and extended tests.
