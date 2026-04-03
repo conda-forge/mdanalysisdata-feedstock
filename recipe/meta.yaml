@@ -1,5 +1,5 @@
 {% set name = "MDAnalysisData" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 11cbd4a7ebd1df5176fa3e5d18894a5049594471bd80297cc157aaace3c9970c
+  sha256: 1958636ab982e86bde5358e3cad29a484aa64fafbb320a8d4064b6538aa38fc1
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
@@ -44,6 +44,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - kain88-de
     - orbeckst
-    - richardjgowers
+    - IAlibay
